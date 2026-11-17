@@ -1,6 +1,10 @@
 type NewsStory = {
     title: string;
     objectID: string;
+    author: string;
+    created_at: string;
+    points: number;
+    num_coments: number;
 }
 
 type NewsResponse = {
@@ -53,7 +57,9 @@ export async function GET(request: Request) {
         const data: NewsResponse = await response.json();
         const stories = data.hits.map((item) => ({
             id: item.objectID,
-            title: item.title
+            title: item.title,
+            author: item.author,
+            created_at: item.created_at,
         }
         ));
         return Response.json({ stories, totalHits: data.nbHits, totalPages: data.nbPages, page: data.page });
