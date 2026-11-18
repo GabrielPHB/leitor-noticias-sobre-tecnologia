@@ -76,7 +76,7 @@ export default function Home() {
           <p>Nenhuma notícia encontrada</p>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
-          {news.map((item) => (<News key={item.id} title={item.title} author={item.author} created_at={item.created_at}/>
+          {news.map((item) => (<News key={item.id} title={item.title} author={item.author} created_at={item.created_at} id={item.id} />
           ))}
         </div>
         <div className="flex justify-around pt-20 pb-10 text-2xl">
