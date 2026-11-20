@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Leitor de Notícias de Tecnologia
 
-## Getting Started
+# Integrantes
+- Gabriel Machado
 
-First, run the development server:
+# Nome e descrição do projeto
+**Leitor de Notícias de Tecnologia**
+Aplicação web desenvolvida com React e Next.js para consultar notícias de tecnologia da plataforma Hacker News.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O sistema permite pesquisar notícias, visualizar informações detalhadas e comentários, além de organizar notícias salvas em uma lista de leitura pessoal.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Principais funcionalidades
+- Listagem de notícias de tecnologia.
+- Pesquisa de notícias por palavras-chave.
+- Ordenação por relevância ou data de envio.
+- Paginação dos resultados.
+- Visualização dos detalhes e comentários das notícias.
+- Salvamento de notícias em uma lista de leitura.
+- Marcação de notícias como lidas ou não lidas.
+- Adição e edição de anotações.
+- Exclusão de notícias salvas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# API externa utilizada
+**Hacker News API (Algolia)**
+API utilizada para consultar notícias, informações detalhadas e comentários publicados na plataforma Hacker News.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Documentação: https://hn.algolia.com/api
 
-## Learn More
+# Tecnologias utilizadas
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- SQLite
+- better-sqlite3
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Documentação em desenvolvimento. As seções referentes aos endpoints, banco de dados, versão do Node.js e instruções de execução serão adicionadas na versão final.

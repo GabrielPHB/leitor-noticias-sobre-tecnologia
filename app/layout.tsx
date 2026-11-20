@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,8 @@ const geistMono = Geist_Mono({
 const oswald = Oswald({
   subsets: ["latin"],
   variable: "--font-oswald",
-  weight: ["400", "500", "600", "700"],})
+  weight: ["400", "500", "600", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,7 +30,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`min-h-full flex flex-col ${oswald.variable}`}>{children}</body>
+      <body className={`min-h-full flex flex-col ${oswald.variable}`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

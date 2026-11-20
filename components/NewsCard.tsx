@@ -50,14 +50,14 @@ export default function News({ title, author, created_at, id }: NewsProps) {
 
             <div className="flex flex-col gap-3 mt-auto pt-4">
                 <Link
-                    className="text-center bg-[#334155] border border-[#64748B] px-3 py-2 rounded-lg hover:bg-[#475569] transition-colors"
+                    className="text-center bg-[#334155] border border-[#64748B] px-3 py-2 rounded-lg"
                     href={`/stories/${id}`}
                 >
                     Ver mais detalhes
                 </Link>
 
                 <button
-                    className="bg-[#334155] border border-[#64748B] px-3 py-2 rounded-lg hover:bg-[#475569] transition-colors cursor-pointer"
+                    className="bg-[#334155] border border-[#64748B] px-3 py-2 rounded-lg cursor-pointer"
                     type="button"
                     onClick={saveStory}
                 >
